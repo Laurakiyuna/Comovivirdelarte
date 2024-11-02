@@ -40,42 +40,52 @@ p {
 
 
 
-/* Estilos generales para los botones */
+/* Estilos generales para los botones 
 .btn, .btn-suscribirme {
-    background-color: #fefe02; /* Color de fondo amarillo */
-    color: black; /* Texto en negro */
-    padding: 15px 30px; /* Espaciado interno del botón */
-    font-size: 1.2em; /* Tamaño de fuente */
+    background-color: #fefe02; 
+    color: black; 
+    padding: 15px 30px; 
+    font-size: 1.2em; 
     font-weight: bold;
-    border-radius: 8px; /* Bordes redondeados */
-    text-align: center; /* Centra el texto */
-    text-decoration: none; /* Quitar subrayado */
-    display: inline-block; /* Para que funcione el padding correctamente */
-    transition: background-color 0.3s ease; /* Efecto de transición al hacer hover */
-    line-height: 1.5; /* Ajusta la altura de línea para mejor separación entre las líneas */
-}
+    border-radius: 8px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+    line-height: 1.5; 
+}*/
 
 /* Estilo de hover para que el botón cambie al pasar el cursor */
-.btn:hover, .btn-suscribirme:hover {
+/*.btn:hover, .btn-suscribirme:hover {
     background-color: #ffcc00; /* Cambia a un color amarillo más oscuro */
-}
-/*
-.button {
-    background-color: #FFEB3B;
-    color: black;
-    padding: 10px 20px;
-    text-align: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 20px;
-}
 
-.button:hover {
-    background-color: #FFC107;
-}*/
+
+    .button-container {
+        text-align: center; /* Centra el botón en el contenedor */
+        margin: 20px 0; /* Espaciado superior e inferior */
+    }
+    
+    .btn {
+        background-color: #fefe02; /* Color amarillo */
+        color: black;
+        padding: 15px 20px; /* Ajusta el tamaño del padding */
+        font-size: 1em;
+        font-weight: bold;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        width: auto; /* Se adapta al contenido */
+        max-width: 350px; /* Ancho máximo más reducido */
+    }
+    
+    .btn:hover {
+        background-color: #FFC107;
+    }
+    
+    
 ul {
     list-style-type: disc;
     margin-left: 20px; /* Ajusta el espacio de la lista a la izquierda */
@@ -93,34 +103,7 @@ ul li {
     margin: 20px 0; /* Ajusta el espacio superior e inferior */
 }
 
-/* Estilos generales para los botones */
-.btn, .btn-suscribirme {
-    background-color: #fefe02; /* Color de fondo amarillo */
-    color: black; /* Texto en negro */
-    padding: 15px 30px; /* Espaciado interno del botón */
-    font-size: 1.2em; /* Tamaño de fuente */
-    font-weight: bold;
-    border-radius: 8px; /* Bordes redondeados */
-    text-decoration: none; /* Quitar subrayado */
-    display: inline-block; /* Para que funcione el padding correctamente */
-    transition: background-color 0.3s ease; /* Efecto de transición al hacer hover */
-}
 
-/* Estilo de hover para que el botón cambie al pasar el cursor */
-.btn:hover, .btn-suscribirme:hover {
-    background-color: #ffcc00; /* Cambia a un color amarillo más oscuro */
-}
-
-/* Personalización para el botón de suscripción */
-.btn-suscribirme {
-    background-color: #f44336; /* Rojo llamativo */
-    color: white; /* Texto en blanco */
-}
-
-/* Hover para el botón de suscripción */
-.btn-suscribirme:hover {
-    background-color: #d32f2f; /* Rojo más oscuro en hover */
-}
 /* Estilo para las imágenes y la sección de testimonios */
 .testimonios-container {
     display: grid;
@@ -167,3 +150,73 @@ ul li {
   }
 
 
+/* Estilos de la ventana emergente (pop-up) */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.popup img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 10px;
+}
+
+.popup:target {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: #ffcc00;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Imagen y título en orden vertical */
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Testimonios en una sola columna */
+    .testimonios-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Elimina el enlace de los testimonios */
+    .testimonio a {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+ /* Botón a ancho completo en dispositivos móviles */
+ .button-container .btn, .button-container .btn-suscribirme {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente reducido */
+    padding: 15px; /* Más espaciado en el botón */
+}
