@@ -1,0 +1,169 @@
+ /* Aplica la fuente Malgun Gothic en negrita a toda la página */
+body {
+    background-color: #333333; /* Fondo gris oscuro */
+    font-family: 'Malgun Gothic', sans-serif;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0px auto; /*40px Centra el contenido y agrega un margen superior e inferior */
+    background-color: #fff; /* Fondo blanco para el contenido */
+    padding: 80px; /* Espacio interno dentro del contenedor */
+   /* border-radius: 10px;  Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+h1 {
+    background-color: #fefe02; /* Fondo amarillo */
+    display: inline-block; /* Solo el fondo amarillo alrededor del texto */
+    padding: 5px 10px;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    background-color: #fefe02; /* Resaltado amarillo */
+    display: inline-block;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+
+
+/* Estilos generales para los botones */
+.btn, .btn-suscribirme {
+    background-color: #fefe02; /* Color de fondo amarillo */
+    color: black; /* Texto en negro */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    font-size: 1.2em; /* Tamaño de fuente */
+    font-weight: bold;
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto */
+    text-decoration: none; /* Quitar subrayado */
+    display: inline-block; /* Para que funcione el padding correctamente */
+    transition: background-color 0.3s ease; /* Efecto de transición al hacer hover */
+    line-height: 1.5; /* Ajusta la altura de línea para mejor separación entre las líneas */
+}
+
+/* Estilo de hover para que el botón cambie al pasar el cursor */
+.btn:hover, .btn-suscribirme:hover {
+    background-color: #ffcc00; /* Cambia a un color amarillo más oscuro */
+}
+/*
+.button {
+    background-color: #FFEB3B;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #FFC107;
+}*/
+ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Ajusta el espacio de la lista a la izquierda */
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+/* Centrar el contenedor del botón */
+.button-container {
+    text-align: center;
+    margin: 20px 0; /* Ajusta el espacio superior e inferior */
+}
+
+/* Estilos generales para los botones */
+.btn, .btn-suscribirme {
+    background-color: #fefe02; /* Color de fondo amarillo */
+    color: black; /* Texto en negro */
+    padding: 15px 30px; /* Espaciado interno del botón */
+    font-size: 1.2em; /* Tamaño de fuente */
+    font-weight: bold;
+    border-radius: 8px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    display: inline-block; /* Para que funcione el padding correctamente */
+    transition: background-color 0.3s ease; /* Efecto de transición al hacer hover */
+}
+
+/* Estilo de hover para que el botón cambie al pasar el cursor */
+.btn:hover, .btn-suscribirme:hover {
+    background-color: #ffcc00; /* Cambia a un color amarillo más oscuro */
+}
+
+/* Personalización para el botón de suscripción */
+.btn-suscribirme {
+    background-color: #f44336; /* Rojo llamativo */
+    color: white; /* Texto en blanco */
+}
+
+/* Hover para el botón de suscripción */
+.btn-suscribirme:hover {
+    background-color: #d32f2f; /* Rojo más oscuro en hover */
+}
+/* Estilo para las imágenes y la sección de testimonios */
+.testimonios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ajuste a tres columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Estilos de cada testimonio */
+  .testimonio {
+    background-color: #ffff00;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .testimonio img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  /* Contenedor principal para centrar la imagen y el texto */
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  /* Estilos de la imagen */
+  .header-image {
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: 200px;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    margin-right: 20px;
+  }
+
+  /* Estilos del texto */
+  .header-text {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
